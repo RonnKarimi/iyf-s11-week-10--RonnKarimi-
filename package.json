@@ -1,0 +1,17 @@
+{
+  "name": "iyf-s11-week-10-ronnkarimi",
+  "version": "1.0.0",
+  "description": "CommunityHub Week 10 - Node.js & Express backend basics",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5"
+  }
+}
