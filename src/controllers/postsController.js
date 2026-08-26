@@ -94,3 +94,12 @@ const likePost = (req, res) => {
     post.likes++;
     res.json(post);
 };
+
+module.exports = {
+    getAllPosts,
+    getPostById,
+    createPost,
+    updatePost,
+    deletePost,
+    likePost
+};
