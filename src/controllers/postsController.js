@@ -82,3 +82,15 @@ module.exports = {
     updatePost,
     deletePost
 };
+
+const likePost = (req, res) => {
+    const id = parseInt(req.params.id);
+    const post = store.posts.find(p => p.id === id);
+
+    if (!post) {
+        return res.status(404).json({ error: 'Post not found' });
+    }
+
+    post.likes++;
+    res.json(post);
+};
